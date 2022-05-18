@@ -1,0 +1,345 @@
+:root {
+	--red: #E50914;
+	--bg: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--bg);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--red);
+	font-size: 40px;
+	text-decoration: none;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.active {
+	color: #FFF;
+}
+
+  .dropdown {
+	float: right;
+	overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+	font-size: inherit;
+	border: none;
+	outline: none;
+	color: #AAA;
+	background-color: inherit;
+	font-family: inherit;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+	color: #FFF;
+  }
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--bg);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	float: none;
+	color: #AAA;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+
+  .dropdown-content a:hover {
+	color: #FFF;
+  }
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+
+/* ---- ----- ----- main movie ----- ----- ----- */
+.main-movie {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../images/backdrop.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.main-movie .container {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.main-movie .container-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.main-movie .title {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.main-movie .description {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.main-movie .button {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.main-movie .button:hover {
+	background: #fff;
+	color: #000;
+}
+
+.main-movie .button i {
+	margin-right: 1.25em;
+}
+/* ---- ----- ----- registration ----- ----- ----- */
+.registration {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../images/movies/Dune.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.registration .container {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+	text-align: center;
+}
+
+.registration .title {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.registration .description {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-bottom: 1.25em;
+}
+
+.registration .button {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.registration .button:hover {
+	background: #fff;
+	color: #000;
+}
+
+.registration .button i {
+	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- title container ----- ----- ----- */
+.title-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.title-container h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+
+/* ---- ----- ----- main container ----- ----- ----- */
+.recommended-movies,
+.recommended-series {
+	margin-bottom: 70px;
+}
+
+.recommended-movies .main-container,
+.recommended-series .main-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.recommended-movies .main-container .left-arrow,
+.recommended-movies .main-container .right-arrow,
+.recommended-series .main-container .left-arrow,
+.recommended-series .main-container .right-arrow {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.recommended-movies .main-container .left-arrow:hover,
+.recommended-movies .main-container .right-arrow:hover,
+.recommended-series .main-container .left-arrow:hover,
+.recommended-series .main-container .right-arrow:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.recommended-movies .main-container .left-arrow,
+.recommended-series .main-container .left-arrow{
+	left: 0;
+}
+
+.recommended-movies .main-container .right-arrow,
+.recommended-series .main-container .right-arrow {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.recommended-movies .movies-carousel-container,
+.recommended-series .series-carousel-container {
+	width: 100%;
+	padding: 20px 0;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scroll-behavior: smooth;
+	scrollbar-color: var(--red) var(--bg);
+}
+
+.recommended-movies .movies-carousel-container .carousel,
+.recommended-series .series-carousel-container .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.recommended-movies .movies-carousel-container .carousel .movie,
+.recommended-series .series-carousel-container .carousel .movie {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+	margin: 0 10px;
+}
+
+.recommended-movies .movies-carousel-container .carousel .movie:hover,
+.recommended-series .series-carousel-container .carousel .movie:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+	background: rgba(0,0,0, .9);
+}
+
+.recommended-movies .movies-carousel-container .carousel .movie img,
+.recommended-series .series-carousel-container .carousel .movie img{
+	width: 100%;
+	vertical-align: top;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.main-movie {
+		font-size: 14px;
+	}
+
+	.main-movie .description {
+		max-width: 100%;
+	}
+
+	.recommended-movies .movies-carousel-container,
+	.recommended-series .series-carousel-container {
+		overflow: visible;
+	}
+
+	.recommended-movies .movies-carousel-container .carousel,
+	.recommended-series .series-carousel-container .carousel{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.recommended-movies .left-arrow,
+	.recommended-movies .right-arrow,
+	.recommended-series .left-arrow,
+	.recommended-series .right-arrow{
+		display: none;
+	}
+}

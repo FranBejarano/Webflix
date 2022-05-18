@@ -1,0 +1,147 @@
+
+:root {
+	--red: #E50914;
+	--bg: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--bg);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--red);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.active {
+	color: #FFF;
+}
+
+  .dropdown {
+	float: right;
+	overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+	font-size: inherit;
+	border: none;
+	outline: none;
+	color: #AAA;
+	background-color: inherit;
+	font-family: inherit;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+	color: #FFF;
+  }
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--bg);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	float: none;
+	color: #AAA;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+
+  .dropdown-content a:hover {
+	color: #FFF;
+  }
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }/* ---- ----- ----- Login ----- ----- ----- */
+.login {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../images/gladiator.jpg);
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: center;
+}
+
+.login .container {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+    text-align: center;
+	justify-content: center;
+}
+
+.login .title {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.login .description {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	justify-content: center;
+}
+
+.login .form .form-control {
+    width: 50%;
+    padding: 0.93em 1.87em;
+    margin: 1em;
+}
+
+.login .button {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	margin-top: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.login .button:hover {
+	background: var(--red);
+}
+
